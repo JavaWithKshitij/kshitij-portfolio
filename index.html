@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Your Name | Java Backend Developer</title>
   <link rel="stylesheet" href="./assets/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
+<script>
+  document.getElementById('resumeLink').addEventListener('click', function (event) {
+    event.preventDefault(); // Stop default navigation
+    window.open(this.href, '_blank'); // Open resume in new tab
+  });
+</script>
+
 <body>
 
   <header class="header">
     <div class="container">
-    <img src="./assets/IMG_20250119_125617_506.png" alt="T Kshitij" class="profile-pic">
+      <img src="./assets/IMG_20250119_125617_506.png" alt="T Kshitij" class="profile-pic">
       <h1>T KSHITIJ</h1>
       <p>Java Developer | Spring Boot | Microservices | REST API</p>
     </div>
@@ -22,9 +30,17 @@
     <div class="container">
       <h2>About Me</h2>
       <p>
-        As a dedicated and aspiring software developer in Java, I am passionate about creating clean, efficient, and elegant solutions to real-world problems. My journey in the world of programming has been marked by curiosity, a thirst for knowledge, and a relentless pursuit of excellency.
-In my brief but intensive experience as a Java developer, I've had the privilege of working on a range of small to mid-sized projects, which have provided me with hands-on experience in coding, debugging, and collaborating with a team. I've learned the importance of writing clean and maintainable code, and I continue to seek opportunities to improve my skills and contribute to the success of my projects.
-My career aspirations include becoming a well-rounded software developer and proficient in Java. I am eager to work on more complex projects, learn from experienced professionals, and contribute to innovative software solutions that make a difference in the world. I am committed to staying current with the latest industry trends and technologies, and I'm open to challenges that allow me to stretch my abilities.
+        As a dedicated and aspiring software developer in Java, I am passionate about creating clean, efficient, and
+        elegant solutions to real-world problems. My journey in the world of programming has been marked by curiosity, a
+        thirst for knowledge, and a relentless pursuit of excellency.
+        In my brief but intensive experience as a Java developer, I've had the privilege of working on a range of small
+        to mid-sized projects, which have provided me with hands-on experience in coding, debugging, and collaborating
+        with a team. I've learned the importance of writing clean and maintainable code, and I continue to seek
+        opportunities to improve my skills and contribute to the success of my projects.
+        My career aspirations include becoming a well-rounded software developer and proficient in Java. I am eager to
+        work on more complex projects, learn from experienced professionals, and contribute to innovative software
+        solutions that make a difference in the world. I am committed to staying current with the latest industry trends
+        and technologies, and I'm open to challenges that allow me to stretch my abilities.
       </p>
     </div>
   </section>
@@ -34,14 +50,31 @@ My career aspirations include becoming a well-rounded software developer and pro
       <h2>Projects</h2>
 
       <div class="project">
-        <h3>Employee Management API</h3>
-        <p>A RESTful API built with Spring Boot, JPA, and MySQL for managing employee data with Swagger integration and JWT authentication.</p>
+        <h3>Shopmania : Online Shopping creating</h3>
+        <p>Technology - HTML,CSS,BOOTSTRAP,JAVA,JDBC,SERVLET,ORACLE
+          <br><br>
+          Shopmania is an online shopping application that allows users to browse and purchase products online. The
+          application is divided into two main parts: the admin part
+          and the customer part.
+          Admin part -In admin part , admin can login , create categories,sub categories, upload products as per need ,
+          create offers , and can upload product specifications.
+          Customer part -In Customer part , customer can login, custom can search for a particular product , order a
+          product, edit their profile, cancel the order and make a complaint if needed.
+        </p>
         <a href="https://github.com/yourusername/employee-management-api" target="_blank">View on GitHub</a>
       </div>
 
       <div class="project">
-        <h3>E-Commerce Order Microservice</h3>
-        <p>Handles order placement, inventory check, and Kafka-based event communication between services.</p>
+        <h3>Inventory Management System</h3>
+        <p>Technology - PYTHON(GUI,TKINTER LIB),MYSQL
+          <br><br>
+          Inventory Management System is a GUI-based application that allows users to efficiently track, organize, and
+          manage their inventory in real time. Users can add, update, and delete product records, monitor stock levels,
+          and categorize items for better organization. This application provides an intuitive interface for easy
+          navigation,
+          ensuring both beginners and experienced users can operate it without difficulty. It also helps prevent
+          overstocking or stockouts by giving clear visibility into product availability.
+        </p>
         <a href="https://github.com/yourusername/order-service" target="_blank">View on GitHub</a>
       </div>
 
@@ -51,33 +84,41 @@ My career aspirations include becoming a well-rounded software developer and pro
   <section class="resume section">
     <div class="container">
       <h2>Resume</h2>
-      <a href="assets/resume.pdf" download class="button">Download My Resume</a>
+      <a href="assets/resume.pdf" target="_blank" id="resumeLink" class="button">View My Resume</a>
     </div>
   </section>
 
   <section class="contact section">
     <div class="container">
       <h2>Contact</h2>
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope text-gray-500" viewBox="0 0 16 16">
-                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 10.279zm-.064 6.643-5.385-3.235L8 9.589l-1.651-.99a.5.5 0 0 0-.585.004L1 10.279v2.721a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z"></path>
-              </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+        class="bi bi-envelope text-gray-500" viewBox="0 0 16 16">
+        <path
+          d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 10.279zm-.064 6.643-5.385-3.235L8 9.589l-1.651-.99a.5.5 0 0 0-.585.004L1 10.279v2.721a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z">
+        </path>
+      </svg>
       <a href="mailto:tksh07888@gmail.com" style="text-decoration: none ; color:#333;">tksh07888@gmail.com</a>
       <br>
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone text-gray-500" viewBox="0 0 16 16">
-                <path d="M3.654 1.328a.678.678 0 0 1 .168-.011c.24 0 .465.117.605.325l1.453 2.174a.678.678 0 0 1-.125.87l-1.05.879a.678.678 0 0 0-.154.74c.448 1.222 1.29 2.468 2.516 3.695 1.227 1.226 2.473 2.068 3.695 2.516a.678.678 0 0 0 .74-.154l.879-1.05a.678.678 0 0 1 .87-.125l2.174 1.453a.678.678 0 0 1 .325.605c-.003.057-.015.113-.034.168-.354.986-1.23 1.847-2.336 2.336a3.75 3.75 0 0 1-1.408.287c-2.424 0-5.05-1.423-7.586-3.96C1.423 8.704 0 6.078 0 3.654a3.75 3.75 0 0 1 .287-1.408c.49-1.106 1.35-1.982 2.336-2.336z"></path>
-              </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+        class="bi bi-telephone text-gray-500" viewBox="0 0 16 16">
+        <path
+          d="M3.654 1.328a.678.678 0 0 1 .168-.011c.24 0 .465.117.605.325l1.453 2.174a.678.678 0 0 1-.125.87l-1.05.879a.678.678 0 0 0-.154.74c.448 1.222 1.29 2.468 2.516 3.695 1.227 1.226 2.473 2.068 3.695 2.516a.678.678 0 0 0 .74-.154l.879-1.05a.678.678 0 0 1 .87-.125l2.174 1.453a.678.678 0 0 1 .325.605c-.003.057-.015.113-.034.168-.354.986-1.23 1.847-2.336 2.336a3.75 3.75 0 0 1-1.408.287c-2.424 0-5.05-1.423-7.586-3.96C1.423 8.704 0 6.078 0 3.654a3.75 3.75 0 0 1 .287-1.408c.49-1.106 1.35-1.982 2.336-2.336z">
+        </path>
+      </svg>
       <a href="tel:6268107616" style="text-decoration: none; color: inherit;">6268107616</a>
       <br>
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-linkedin text-primary" viewBox="0 0 16 16">
-                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+        class="bi bi-linkedin text-primary" viewBox="0 0 16 16">
+        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 
              1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zM4.943 13.5V6.169H2.542V13.5h2.401zm-1.2-8.329c.837 
              0 1.358-.554 1.358-1.248-.015-.709-.521-1.248-1.342-1.248-.822 0-1.359.539-1.359 
              1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 
              8.329V9.359c0-.221.016-.442.081-.6.178-.441.584-.898 1.264-.898.893 
              0 1.25.678 1.25 1.672V13.5h2.401V9.284c0-2.27-1.211-3.324-2.826-3.324-1.301 
              0-1.872.72-2.194 1.225h.016v-1.05H6.35c.03.678 0 7.365 0 7.365h2.401z"></path>
-              </svg>
-      <a href="https://www.linkedin.com/in/t-kshitij-7614591b2/" target="_blank" style="text-decoration: none ; color:#333;">T KSHITIJ</a>
+      </svg>
+      <a href="https://www.linkedin.com/in/t-kshitij-7614591b2/" target="_blank"
+        style="text-decoration: none ; color:#333;">T KSHITIJ</a>
     </div>
   </section>
 
@@ -88,4 +129,5 @@ My career aspirations include becoming a well-rounded software developer and pro
   </footer>
 
 </body>
+
 </html>
